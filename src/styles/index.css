@@ -1,14 +1,14 @@
-
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #4c2ca5;
+    height: 80vh;
+    background-color: #b6abd4;
 }
 
 .todo-container {
-    background: rgb(172, 99, 150);
+    background: rgb(160, 94, 140);
     padding: 40px;
     border-radius: 10px;
     width: 500px;
@@ -25,7 +25,16 @@ input {
     width: calc(100% - 22px);
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #c035ad;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% );
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -33,19 +42,21 @@ input {
 
 ul li {
     padding: 10px;
+    width: calc(90% );
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
+
 
 ul li:hover .delete-icon {
     display: inline;
 }
 
 .delete-icon {
-    display: none;
+    display:none;
     cursor: pointer;
-    color: rgb(240, 34, 62);
+    color: rgb(231, 11, 77);
     font-size: 30px;
 }
